@@ -31,7 +31,7 @@ const calculateBattle = (player: Player, opponent: Player) => {
 function battle(battleConfig: BattleConfig): BattleResult {
   return {
     p1: calculateBattle(battleConfig.p1, battleConfig.p2),
-    p2: battleConfig.p2,
+    p2: calculateBattle(battleConfig.p1, battleConfig.p2),
   };
 }
 export default battle;
