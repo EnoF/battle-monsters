@@ -12,11 +12,11 @@ interface PlayerMove {
   type: PlayerMoveType;
   power: number;
 }
-interface BattleResult {
+export interface BattleResult {
   p1: Player;
   p2: Player;
 }
-interface BattleConfig {
+export interface BattleConfig {
   p1: Player;
   p2: Player;
 }
