@@ -6,6 +6,7 @@ export enum PlayerMoveType {
   ATTACK = "ATTACK",
   DODGE = "DODGE",
   BLOCK = "BLOCK",
+  STAGGER = "STAGGER",
 }
 interface PlayerMove {
   type: PlayerMoveType;
@@ -19,12 +20,22 @@ interface BattleConfig {
   p1: Player;
   p2: Player;
 }
-const calculateBattle = (player: Player, opponent: Player) => {
+const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
   switch (opponent.move.type) {
+    case PlayerMoveType.DODGE:
+      if (move.type !== PlayerMoveType.ATTACK) return player;
+      if (move.power <= 1) return player;
+      return {
+        ...player,
+        move: {
+          type: PlayerMoveType.STAGGER,
+          turns: move.power - 1,
+        },
+      };
     case PlayerMoveType.ATTACK:
-      if (player.move.type === PlayerMoveType.DODGE) return player;
-      if (player.move.type === PlayerMoveType.BLOCK) return player;
-      return { ...player, hp: player.hp - 1 };
+      if (move.type === PlayerMoveType.DODGE) return player;
+      if (move.type === PlayerMoveType.BLOCK) return player;
+      return { ...player, hp: player.hp - opponent.move.power };
     default:
       return player;
   }
