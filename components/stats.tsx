@@ -18,7 +18,7 @@ export function Stats({ name, hp, maxHp }: StatsProps) {
   const hpPercentage = Math.floor((hp / maxHp) * 100);
   const hpColor = getHpColor(hpPercentage);
   return (
-    <section>
+    <section className="stats">
       <h2>{name}</h2>
       <div className="hp">
         <span className="hp__content">
@@ -26,6 +26,10 @@ export function Stats({ name, hp, maxHp }: StatsProps) {
         </span>
       </div>
       <style jsx>{`
+        .stats{
+          flex: 1;
+          margin: 1em;
+        }
         .hp {
           text-align: right;
           padding: 0.2em 0.5em;
