@@ -43,7 +43,7 @@ export default function Home() {
       </section>
       <BattleControls moves={player.moves} onSubmit={submitMove} />
       <section className="log-container">
-        <BattleLog name="EnoF" logs={playerLog} />
+        <BattleLog name="EnoF" move={player.move} logs={playerLog} />
         <BattleLog name="Balrog" logs={aiLog} />
       </section>
       <style jsx>{`

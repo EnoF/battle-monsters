@@ -10,7 +10,7 @@ export interface Combo {
 }
 export interface AI extends Player {
   combos: Array<Combo>;
-  selectedCombo: Combo;
+  selectedCombo: Array<Combo>;
 }
 
 export const createAI = () => ({

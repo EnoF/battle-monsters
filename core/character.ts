@@ -1,22 +1,5 @@
-export interface Player {
-  hp: number;
-  maxHp: number;
-  move?: PlayerMove;
-  moves: Array<PlayerMove>;
-}
-export enum PlayerMoveType {
-  ATTACK = "ATTACK",
-  DODGE = "DODGE",
-  BLOCK = "BLOCK",
-  STAGGER = "STAGGER",
-}
-export interface PlayerMove {
-  type: PlayerMoveType;
-  power: number;
-  aoe?: number;
-  shift?: number;
-  turns?: number;
-}
+import { Player, PlayerMoveType } from "./player";
+
 export const createCharacter = (): Player => ({
   hp: 10,
   maxHp: 10,

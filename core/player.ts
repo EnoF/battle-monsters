@@ -12,7 +12,7 @@ export enum PlayerMoveType {
 }
 export interface PlayerMove {
   type: PlayerMoveType;
-  power: number;
+  power?: number;
   aoe?: number;
   shift?: number;
   turns?: number;

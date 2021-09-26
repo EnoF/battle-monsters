@@ -6,12 +6,9 @@ interface BattleControlsProps {
   onSubmit: (move: PlayerMove) => void;
 }
 
-export function BattleControls({ moves, onSubmit }: BattleControlsProps) {
-  const onSubmitWrapper = (move) => (event) => {
-    onSubmit(move);
-    event.preventDefault();
-  };
-  const items = moves.map((entry, index) => {
+const getMoves = (move, moves, onSubmitWrapper) => {
+  if (move?.type === PlayerMoveType.STAGGER && move?.turns > 0) return [move];
+  return moves.map((entry, index) => {
     switch (entry.type) {
       case PlayerMoveType.ATTACK:
         return (
@@ -28,6 +25,13 @@ export function BattleControls({ moves, onSubmit }: BattleControlsProps) {
         );
     }
   });
+};
+export function BattleControls({ move, moves, onSubmit }: BattleControlsProps) {
+  const onSubmitWrapper = (move) => (event) => {
+    onSubmit(move);
+    event.preventDefault();
+  };
+  const items = getMoves(move, moves, onSubmitWrapper);
   return (
     <form className="battle-controls">
       {items}
