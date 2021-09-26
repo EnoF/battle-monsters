@@ -1,10 +1,7 @@
 import Head from "next/head";
 
-const toUpperCase = (x: string) => x.toUpperCase()
-
-export default function Home () {
-  const title = "battle monsters" 
-    |> toUpperCase(#)
+export default function Home() {
+  const title = "Battle Monsters";
   return (
     <main>
       <Head>
@@ -18,4 +15,4 @@ export default function Home () {
       <h1>{title}</h1>
     </main>
   );
-};
+}
