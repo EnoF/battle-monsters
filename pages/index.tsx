@@ -1,17 +1,31 @@
+import React, { useCallback, useState } from "react";
 import Head from "next/head";
 import { Stats } from "../components/stats";
 import { BattleLog } from "../components/battle-log";
+import { BattleControls } from "../components/battle-controls";
+
 import { createCharacter } from "../core/player";
-import { createAI } from "../core/ai";
+import { createAI, executeCombo } from "../core/ai";
 import battle from "../core/battle";
-import { useState } from "react";
 
 export default function Home() {
   const title = "Battle Monsters";
-  const [player, setPlayer] = useState(createCharacter());
-  const [ai, setAI] = useState(createAI());
+  const [player, setPlayer] = useState(() => createCharacter());
+  const [ai, setAI] = useState(() => createAI());
   const [playerLog, setPlayerLog] = useState([]);
   const [aiLog, setAILog] = useState([]);
+  const submitMove = (move) => {
+    const executingAI = executeCombo(ai)
+    console.log('executingAI', executingAI)
+    const { p1, p2 } = battle({
+      p1: { ...player, move },
+      p2: executingAI,
+    });
+    setPlayerLog([move, ...playerLog])
+    setAILog([executingAI.move, ...aiLog])
+    setPlayer(p1);
+    setAI(p2);
+  };
   return (
     <main>
       <Head>
@@ -27,7 +41,7 @@ export default function Home() {
         <Stats name="EnoF" hp={player.hp} maxHp={player.maxHp} />
         <Stats name="Balrog" hp={ai.hp} maxHp={ai.maxHp} />
       </section>
-      <section className="controls-container"></section>
+      <BattleControls moves={player.moves} onSubmit={submitMove} />
       <section className="log-container">
         <BattleLog name="EnoF" logs={playerLog} />
         <BattleLog name="Balrog" logs={aiLog} />

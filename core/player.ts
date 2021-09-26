@@ -50,3 +50,4 @@ export const createCharacter = (): Player => ({
 
 export const getAoe = (move: PlayerMove) => move.aoe || 0;
 export const getShift = (move: PlayerMove) => move.shift || 0;
+export const getPower = (move: PlayerMove) => move.power || 0;

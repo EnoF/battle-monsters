@@ -57,7 +57,7 @@ describe("ai combos", () => {
   describe("when executing a combo", () => {
     describe("and the ai has selected combo 1", () => {
       describe("and the player only attacks", () => {
-        it("should execute the combo", () => {
+        it.only("should execute the combo", () => {
           jest.spyOn(global.Math, "random").mockReturnValue(0.123456789);
           const aiFirstMove = executeCombo(ai);
           expect(aiFirstMove.move).toMatchObject({

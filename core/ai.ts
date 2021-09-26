@@ -10,9 +10,8 @@ export interface Combo {
 }
 export interface AI extends Player {
   combos: Array<Combo>;
-  selectCombo: Combo;
+  selectedCombo: Combo;
 }
-export const selectSkill = () => null;
 
 export const createAI = () => ({
   hp: 30,
@@ -61,20 +60,22 @@ export const filterAvailableCombos = (ai: AI) => {
 };
 
 export const selectCombo = (ai: AI) => {
+  if (ai.selectedCombo?.length) return ai.selectedCombo;
   const availableCombos = filterAvailableCombos(ai);
-  return availableCombos[Math.floor(Math.random() * availableCombos.length)];
+  return availableCombos[Math.floor(Math.random() * availableCombos.length)]
+    .moves;
 };
 
 export const executeCombo = (ai: AI) => {
-  if (ai.selectedCombo?.length) {
-    const [move, ...selectedCombo] = ai.selectedCombo;
+  if (ai.move?.type === PlayerMoveType.STAGGER && ai.move.turns > 0)
     return {
       ...ai,
-      move,
-      selectedCombo,
+      move: {
+        ...ai.move,
+        turns: ai.move.turns - 1,
+      },
     };
-  }
-  const [move, ...selectedCombo] = selectCombo(ai).moves;
+  const [move, ...selectedCombo] = selectCombo(ai);
   return {
     ...ai,
     move,
