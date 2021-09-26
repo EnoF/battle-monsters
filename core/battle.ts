@@ -1,4 +1,4 @@
-interface Player {
+export interface Player {
   hp: number;
   move?: PlayerMove;
 }
@@ -8,7 +8,7 @@ export enum PlayerMoveType {
   BLOCK = "BLOCK",
   STAGGER = "STAGGER",
 }
-interface PlayerMove {
+export interface PlayerMove {
   type: PlayerMoveType;
   power: number;
   aoe?: number;
