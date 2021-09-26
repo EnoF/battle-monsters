@@ -1,4 +1,4 @@
-import { PlayerMoveType } from "./battle";
+import { PlayerMoveType } from "./player";
 import { selectCombo, executeCombo, AI } from "./ai";
 
 describe("ai combos", () => {

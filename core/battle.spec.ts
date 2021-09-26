@@ -1,5 +1,6 @@
 import { getPermutations } from "./permutations";
-import battle, { PlayerMoveType, BattleConfig, BattleResult } from "./battle";
+import battle, { BattleConfig, BattleResult } from "./battle";
+import { PlayerMoveType } from "./player";
 
 const getPowerDescription = (move) => {
   if (!move.power) return "";

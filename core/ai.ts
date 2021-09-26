@@ -1,4 +1,5 @@
-import { Player, PlayerMove } from "./battle";
+import { Player, PlayerMove, PlayerMoveType } from "./player";
+
 export interface Condition {
   minHp?: number;
   maxHp?: number;
@@ -8,7 +9,6 @@ export interface Combo {
   activationConditions: Array<Condition>;
 }
 export interface AI extends Player {
-  maxHp: number;
   combos: Array<Combo>;
   selectCombo: Combo;
 }

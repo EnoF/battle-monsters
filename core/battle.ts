@@ -1,20 +1,5 @@
-export interface Player {
-  hp: number;
-  move?: PlayerMove;
-}
-export enum PlayerMoveType {
-  ATTACK = "ATTACK",
-  DODGE = "DODGE",
-  BLOCK = "BLOCK",
-  STAGGER = "STAGGER",
-}
-export interface PlayerMove {
-  type: PlayerMoveType;
-  power: number;
-  aoe?: number;
-  shift?: number;
-  turns?: number;
-}
+import { Player, PlayerMoveType, getAoe, getShift } from "./player";
+
 export interface BattleResult {
   p1: Player;
   p2: Player;
@@ -23,8 +8,6 @@ export interface BattleConfig {
   p1: Player;
   p2: Player;
 }
-const getAoe = (move: PlayerMove) => move.aoe || 0;
-const getShift = (move: PlayerMove) => move.shift || 0;
 
 const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
   switch (opponent.move.type) {
