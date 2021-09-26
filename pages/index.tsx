@@ -1,8 +1,14 @@
 import Head from "next/head";
 import { Stats } from "../components/stats";
+import { createCharacter } from "../core/player";
+import { createAI } from "../core/ai";
+import battle from "../core/battle";
+import {useState} from "react";
 
 export default function Home() {
   const title = "Battle Monsters";
+  const [player, setPlayer] = useState(createCharacter())
+  const [ai, setAI] = useState(createAI())
   return (
     <main>
       <Head>
@@ -15,12 +21,12 @@ export default function Home() {
       </Head>
       <h1>{title}</h1>
       <section className="stats-container">
-        <Stats name="EnoF" hp={10} maxHp={10} />
-        <Stats name="Balrog" hp={30} maxHp={30} />
+        <Stats name="EnoF" hp={player.hp} maxHp={player.maxHp} />
+        <Stats name="Balrog" hp={ai.hp} maxHp={ai.maxHp} />
       </section>
       <style jsx>{`
         h1 {
-          margin: .5em;
+          margin: 0.5em;
         }
         .stats-container {
           display: flex;
