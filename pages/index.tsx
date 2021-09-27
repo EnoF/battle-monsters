@@ -4,7 +4,7 @@ import { Stats } from "../components/stats";
 import { BattleLog } from "../components/battle-log";
 import { BattleControls } from "../components/battle-controls";
 
-import { createCharacter, PlayerMoveType } from "../core/player";
+import { createCharacter, isStaggered, PlayerMoveType } from "../core/player";
 import { createAI, executeCombo } from "../core/ai";
 import battle from "../core/battle";
 
@@ -38,8 +38,8 @@ export default function Home() {
       </Head>
       <h1>{title}</h1>
       <section className="stats-container">
-        <Stats name="EnoF" hp={player.hp} maxHp={player.maxHp} isStaggered={player.move?.type === PlayerMoveType.STAGGER && player.move?.turns > 0} />
-        <Stats name="Balrog" hp={ai.hp} maxHp={ai.maxHp} isStaggered={ai.move?.type === PlayerMoveType.STAGGER && ai.move?.turns > 0}/>
+        <Stats name="EnoF" hp={player.hp} maxHp={player.maxHp} isStaggered={isStaggered(player)} />
+        <Stats name="Balrog" hp={ai.hp} maxHp={ai.maxHp} isStaggered={isStaggered(ai)}/>
       </section>
       <BattleControls moves={player.moves} onSubmit={submitMove} />
       <section className="log-container">
