@@ -4,6 +4,7 @@ interface StatsProps {
   name: string;
   hp: number;
   maxHp: number;
+  isStaggered: boolean;
 }
 
 enum HP_COLORS {
@@ -14,12 +15,12 @@ function getHpColor(hpPercentage: number) {
   if (hpPercentage > 30) return HP_COLORS.HEALTHY_GREEN;
   return HP_COLORS.DANGEROUSLY_LOW;
 }
-export function Stats({ name, hp, maxHp }: StatsProps) {
+export function Stats({ name, hp, maxHp, isStaggered }: StatsProps) {
   const hpPercentage = Math.floor((hp / maxHp) * 100);
   const hpColor = getHpColor(hpPercentage);
   return (
     <section className="stats">
-      <h2>{name}</h2>
+      <h2>{name} { isStaggered && <span>*</span>}</h2>
       <div className="hp">
         <span className="hp__content">
           {hp}/{maxHp}
