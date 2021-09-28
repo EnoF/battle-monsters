@@ -1,6 +1,6 @@
 import { getPermutations } from "./permutations";
 import battle, { BattleConfig, BattleResult } from "./battle";
-import { PlayerMoveType } from "./player";
+import { PlayerMoveType, createCharacter } from "./player";
 
 const getPowerDescription = (move) => {
   if (!move.power) return "";
@@ -66,4 +66,24 @@ describe("Battle system", () => {
       p2: { hp: 6, move: { type: PlayerMoveType.STAGGER, turns: 1 } },
     }
   );
+  describe("cooldown", () => {
+    it("should set a cooldown after a skill with cooldown is used", () => {
+      const { p1, p2 } = battle({
+        p1: {
+          ...createCharacter(),
+          move: { type: PlayerMoveType.DODGE },
+        },
+        p2: {
+          ...createCharacter(),
+          move: { type: PlayerMoveType.DODGE },
+        },
+      });
+      expect(p1.moves).toEqual(
+        expect.arrayContaining([{ type: PlayerMoveType.DODGE, cooldown: 1 }])
+      );
+      expect(p2.moves).toEqual(
+        expect.arrayContaining([{ type: PlayerMoveType.DODGE, cooldown: 1 }])
+      );
+    });
+  });
 });

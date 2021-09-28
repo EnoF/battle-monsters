@@ -41,7 +41,7 @@ export default function Home() {
         <Stats name="EnoF" hp={player.hp} maxHp={player.maxHp} isStaggered={isStaggered(player)} />
         <Stats name="Balrog" hp={ai.hp} maxHp={ai.maxHp} isStaggered={isStaggered(ai)}/>
       </section>
-      <BattleControls moves={player.moves} onSubmit={submitMove} />
+      <BattleControls move={player.move} moves={player.moves} onSubmit={submitMove} />
       <section className="log-container">
         <BattleLog name="EnoF" move={player.move} logs={playerLog} />
         <BattleLog name="Balrog" logs={aiLog} />

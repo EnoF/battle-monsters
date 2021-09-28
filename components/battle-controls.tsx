@@ -7,7 +7,12 @@ interface BattleControlsProps {
 }
 
 const getMoves = (move, moves, onSubmitWrapper) => {
-  if (move?.type === PlayerMoveType.STAGGER && move?.turns > 0) return [move];
+  if (move?.type === PlayerMoveType.STAGGER && move?.turns > 0)
+    return (
+      <button type="submit" onClick={onSubmitWrapper(move)}>
+        pass (staggered)
+      </button>
+    );
   return moves.map((entry, index) => {
     switch (entry.type) {
       case PlayerMoveType.ATTACK:
@@ -19,7 +24,12 @@ const getMoves = (move, moves, onSubmitWrapper) => {
         );
       default:
         return (
-          <button key={index} type="submit" onClick={onSubmitWrapper(entry)}>
+          <button
+            key={index}
+            type="submit"
+            onClick={onSubmitWrapper(entry)}
+            disabled={entry.cooldown}
+          >
             {entry.type}
           </button>
         );
