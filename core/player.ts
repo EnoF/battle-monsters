@@ -6,8 +6,8 @@ export interface Player {
 }
 export enum PlayerMoveType {
   ATTACK = "ATTACK",
+  PARRY = "PARRY",
   DODGE = "DODGE",
-  BLOCK = "BLOCK",
   STAGGER = "STAGGER",
 }
 export interface PlayerMove {
@@ -40,10 +40,10 @@ export const createCharacter = (): Player => ({
       shift: 1,
     },
     {
-      type: PlayerMoveType.DODGE,
+      type: PlayerMoveType.PARRY,
     },
     {
-      type: PlayerMoveType.BLOCK,
+      type: PlayerMoveType.DODGE,
     },
   ],
 });
@@ -51,4 +51,5 @@ export const createCharacter = (): Player => ({
 export const getAoe = (move: PlayerMove) => move.aoe || 0;
 export const getShift = (move: PlayerMove) => move.shift || 0;
 export const getPower = (move: PlayerMove) => move.power || 0;
-export const isStaggered = (player:Player) => player.move?.type === PlayerMoveType.STAGGER && player.move?.turns > 0
+export const isStaggered = (player: Player) =>
+  player.move?.type === PlayerMoveType.STAGGER && player.move?.turns > 0;

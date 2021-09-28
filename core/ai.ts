@@ -20,22 +20,22 @@ export const createAI = (): AI => ({
     {
       moves: [
         { type: PlayerMoveType.ATTACK, power: 2, aoe: 1 },
-        { type: PlayerMoveType.ATTACK, power: 1, shift: 2 },
+        { type: PlayerMoveType.PARRY },
         { type: PlayerMoveType.ATTACK, power: 3, aoe: 1 },
       ],
       activationConditions: [{ minHp: 0.5, maxHp: 1 }],
     },
     {
       moves: [
-        { type: PlayerMoveType.DODGE },
+        { type: PlayerMoveType.PARRY },
         { type: PlayerMoveType.ATTACK, power: 3 },
       ],
       activationConditions: [{ minHp: 0.5, maxHp: 1 }],
     },
     {
       moves: [
-        { type: PlayerMoveType.DODGE },
         { type: PlayerMoveType.ATTACK, power: 3 },
+        { type: PlayerMoveType.PARRY },
       ],
       activationConditions: [{ minHp: 0, maxHp: 0.5 }],
     },

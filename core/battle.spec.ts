@@ -35,7 +35,7 @@ describe("Battle system", () => {
     { type: PlayerMoveType.ATTACK, power: 1, shift: 1 },
     { type: PlayerMoveType.ATTACK, power: 1, aoe: 1 },
     { type: PlayerMoveType.ATTACK, power: 3, aoe: 2, shift: 2 },
-    { type: PlayerMoveType.BLOCK },
+    { type: PlayerMoveType.PARRY },
     { type: PlayerMoveType.DODGE },
   ];
   getPermutations({

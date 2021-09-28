@@ -198,39 +198,6 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: ATTACK with 1 power and player 2: BLOCK  calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: ATTACK with 1 power and player 2: BLOCK  calculates it correctly 2`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: ATTACK with 1 power and player 2: BLOCK  calculates it correctly 3`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
 exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  calculates it correctly 1`] = `
 Object {
   "p1": Object {
@@ -246,6 +213,39 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  calculates it correctly 3`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: ATTACK with 1 power and player 2: PARRY  calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: ATTACK with 1 power and player 2: PARRY  calculates it correctly 2`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
     "move": Object {
       "turns": 1,
       "type": "STAGGER",
@@ -257,7 +257,7 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  calculates it correctly 3`] = `
+exports[`Battle system when player 1: ATTACK with 1 power and player 2: PARRY  calculates it correctly 3`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -338,7 +338,7 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: ATTACK with 2 power and player 2: BLOCK  calculates it correctly 1`] = `
+exports[`Battle system when player 1: ATTACK with 2 power and player 2: DODGE  calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -349,7 +349,7 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: ATTACK with 2 power and player 2: DODGE  calculates it correctly 1`] = `
+exports[`Battle system when player 1: ATTACK with 2 power and player 2: PARRY  calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -496,29 +496,29 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: ATTACK with 3 power and player 2: BLOCK  calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: ATTACK with 3 power and player 2: BLOCK  calculates it correctly 2`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
 exports[`Battle system when player 1: ATTACK with 3 power and player 2: DODGE  calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: ATTACK with 3 power and player 2: DODGE  calculates it correctly 2`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: ATTACK with 3 power and player 2: PARRY  calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -533,7 +533,7 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: ATTACK with 3 power and player 2: DODGE  calculates it correctly 2`] = `
+exports[`Battle system when player 1: ATTACK with 3 power and player 2: PARRY  calculates it correctly 2`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -541,94 +541,6 @@ Object {
       "turns": 6,
       "type": "STAGGER",
     },
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: ATTACK with 1 power calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: ATTACK with 1 power calculates it correctly 2`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: ATTACK with 1 power calculates it correctly 3`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: ATTACK with 2 power calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: ATTACK with 3 power calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: ATTACK with 3 power calculates it correctly 2`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: BLOCK  calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
-  },
-  "p2": Object {
-    "hp": 10,
-  },
-}
-`;
-
-exports[`Battle system when player 1: BLOCK  and player 2: DODGE  calculates it correctly 1`] = `
-Object {
-  "p1": Object {
-    "hp": 10,
   },
   "p2": Object {
     "hp": 10,
@@ -654,10 +566,6 @@ Object {
   },
   "p2": Object {
     "hp": 10,
-    "move": Object {
-      "turns": 1,
-      "type": "STAGGER",
-    },
   },
 }
 `;
@@ -669,15 +577,55 @@ Object {
   },
   "p2": Object {
     "hp": 10,
-    "move": Object {
-      "turns": 1,
-      "type": "STAGGER",
-    },
   },
 }
 `;
 
 exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 2 power calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 3 power calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 3 power calculates it correctly 2`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: DODGE  and player 2: DODGE  calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: DODGE  and player 2: PARRY  calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -692,7 +640,63 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 3 power calculates it correctly 1`] = `
+exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 1 power calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+  },
+}
+`;
+
+exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 1 power calculates it correctly 2`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+    "move": Object {
+      "turns": 1,
+      "type": "STAGGER",
+    },
+  },
+}
+`;
+
+exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 1 power calculates it correctly 3`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+    "move": Object {
+      "turns": 1,
+      "type": "STAGGER",
+    },
+  },
+}
+`;
+
+exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 2 power calculates it correctly 1`] = `
+Object {
+  "p1": Object {
+    "hp": 10,
+  },
+  "p2": Object {
+    "hp": 10,
+    "move": Object {
+      "turns": 1,
+      "type": "STAGGER",
+    },
+  },
+}
+`;
+
+exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 3 power calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -707,7 +711,7 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 3 power calculates it correctly 2`] = `
+exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 3 power calculates it correctly 2`] = `
 Object {
   "p1": Object {
     "hp": 10,
@@ -722,10 +726,14 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: DODGE  and player 2: BLOCK  calculates it correctly 1`] = `
+exports[`Battle system when player 1: PARRY  and player 2: DODGE  calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,
+    "move": Object {
+      "turns": 1,
+      "type": "STAGGER",
+    },
   },
   "p2": Object {
     "hp": 10,
@@ -733,7 +741,7 @@ Object {
 }
 `;
 
-exports[`Battle system when player 1: DODGE  and player 2: DODGE  calculates it correctly 1`] = `
+exports[`Battle system when player 1: PARRY  and player 2: PARRY  calculates it correctly 1`] = `
 Object {
   "p1": Object {
     "hp": 10,

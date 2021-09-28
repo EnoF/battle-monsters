@@ -11,7 +11,7 @@ export interface BattleConfig {
 
 const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
   switch (opponent.move.type) {
-    case PlayerMoveType.DODGE:
+    case PlayerMoveType.PARRY:
       if (move.type !== PlayerMoveType.ATTACK) return player;
       const stagnation = move.power + getShift(move) + getAoe(move) - 1;
       if (stagnation <= 0) return player;
@@ -24,9 +24,18 @@ const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
       };
     case PlayerMoveType.ATTACK:
       if (move.type === PlayerMoveType.DODGE) return player;
-      if (move.type === PlayerMoveType.BLOCK) return player;
+      if (move.type === PlayerMoveType.PARRY) return player;
       if (getShift(move) > getAoe(opponent.move)) return player;
       return { ...player, hp: player.hp - opponent.move.power };
+    case PlayerMoveType.DODGE:
+      if (move.type !== PlayerMoveType.PARRY) return player;
+      return {
+        ...player,
+        move: {
+          type: PlayerMoveType.STAGGER,
+          turns: 1,
+        },
+      };
     default:
       return player;
   }
