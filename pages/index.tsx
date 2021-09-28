@@ -7,6 +7,7 @@ import { BattleControls } from "../components/battle-controls";
 import { createCharacter, isStaggered, PlayerMoveType } from "../core/player";
 import { createAI, executeCombo } from "../core/ai";
 import battle from "../core/battle";
+import {BattleSummary} from "../components/battle-summary";
 
 export default function Home() {
   const title = "Battle Monsters";
@@ -42,6 +43,7 @@ export default function Home() {
         <Stats name="Balrog" hp={ai.hp} maxHp={ai.maxHp} isStaggered={isStaggered(ai)}/>
       </section>
       <BattleControls move={player.move} moves={player.moves} onSubmit={submitMove} />
+      <BattleSummary p1="EnoF" p2="Balrog" p1Logs={playerLog} p2Logs={aiLog} />
       <section className="log-container">
         <BattleLog name="EnoF" move={player.move} logs={playerLog} />
         <BattleLog name="Balrog" logs={aiLog} />
