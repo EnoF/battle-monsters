@@ -1,4 +1,4 @@
-import { Player, PlayerMoveType, getAoe, getShift } from "./player";
+import { Player, PlayerMoveType, getAoe, getShift, PlayerMove } from "./player";
 
 export interface BattleResult {
   p1: Player;
@@ -8,7 +8,10 @@ export interface BattleConfig {
   p1: Player;
   p2: Player;
 }
-
+const isStaggeredAfterRound = (move: PlayerMove, power: number) => {
+  if (move.type !== PlayerMoveType.STAGGER) return false;
+  return move.turns - power > 1;
+};
 const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
   switch (opponent.move.type) {
     case PlayerMoveType.PARRY:
@@ -26,6 +29,15 @@ const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
       if (move.type === PlayerMoveType.DODGE) return player;
       if (move.type === PlayerMoveType.PARRY) return player;
       if (getShift(move) > getAoe(opponent.move)) return player;
+      if (isStaggeredAfterRound(move, opponent.move.power))
+        return {
+          ...player,
+          hp: player.hp - opponent.move.power,
+          move: {
+            type: PlayerMoveType.STAGGER,
+            turns: move.turns - opponent.move.power - 1,
+          },
+        };
       return { ...player, hp: player.hp - opponent.move.power };
     case PlayerMoveType.DODGE:
       if (move.type !== PlayerMoveType.PARRY) return player;

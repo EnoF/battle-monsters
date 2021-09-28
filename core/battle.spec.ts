@@ -37,6 +37,7 @@ describe("Battle system", () => {
     { type: PlayerMoveType.ATTACK, power: 3, aoe: 2, shift: 2 },
     { type: PlayerMoveType.PARRY },
     { type: PlayerMoveType.DODGE },
+    { type: PlayerMoveType.STAGGER, turns: 3 },
   ];
   getPermutations({
     p1Hp: [10],
@@ -53,16 +54,16 @@ describe("Battle system", () => {
     {
       p1: {
         hp: 10,
-        move: { type: PlayerMoveType.ATTACK, aoe: 2, power: 3, shift: 2 },
+        move: { type: PlayerMoveType.ATTACK, power: 4 },
       },
       p2: {
         hp: 10,
-        move: { type: PlayerMoveType.ATTACK, power: 1, shift: 1 },
+        move: { type: PlayerMoveType.STAGGER, turns: 5 },
       },
     },
     {
       p1: { hp: 10 },
-      p2: { hp: 7 },
+      p2: { hp: 6, move: { type: PlayerMoveType.STAGGER, turns: 1 } },
     }
   );
 });
