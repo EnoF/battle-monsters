@@ -19,8 +19,8 @@ export interface PlayerMove {
   cooldown?: number;
 }
 export const createCharacter = (): Player => ({
-  hp: 10,
-  maxHp: 10,
+  hp: 15,
+  maxHp: 15,
   moves: [
     {
       type: PlayerMoveType.ATTACK,

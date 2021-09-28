@@ -41,7 +41,7 @@ export const createAI = (): AI => ({
     },
     {
       moves: [
-        { type: PlayerMoveType.BLOCK },
+        { type: PlayerMoveType.DODGE },
         { type: PlayerMoveType.ATTACK, power: 5 },
       ],
       activationConditions: [{ minHp: 0, maxHp: 0.7 }],
