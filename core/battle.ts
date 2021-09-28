@@ -12,7 +12,25 @@ const isStaggeredAfterRound = (move: PlayerMove, power: number) => {
   if (move.type !== PlayerMoveType.STAGGER) return false;
   return move.turns - power > 1;
 };
-const calculateBattle = ({ move, ...player }: Player, opponent: Player) => {
+const calculateCooldown = (move, moves = []) =>
+  moves.map((m) => {
+    if (m.type !== PlayerMoveType.DODGE) return m;
+    if (move.type === PlayerMoveType.DODGE)
+      return {
+        ...m,
+        cooldown: 1,
+      };
+    return { ...m, cooldown: 0 };
+  });
+
+const calculateBattle = (
+  { move, moves, ...playerStats }: Player,
+  opponent: Player
+) => {
+  const player = {
+    ...playerStats,
+    moves: calculateCooldown(move, moves),
+  };
   switch (opponent.move.type) {
     case PlayerMoveType.PARRY:
       if (move.type !== PlayerMoveType.ATTACK) return player;

@@ -16,6 +16,7 @@ export interface PlayerMove {
   aoe?: number;
   shift?: number;
   turns?: number;
+  cooldown?: number;
 }
 export const createCharacter = (): Player => ({
   hp: 10,
@@ -51,5 +52,6 @@ export const createCharacter = (): Player => ({
 export const getAoe = (move: PlayerMove) => move.aoe || 0;
 export const getShift = (move: PlayerMove) => move.shift || 0;
 export const getPower = (move: PlayerMove) => move.power || 0;
+export const getCooldown = (move: PlayerMove) => move.cooldown || 0;
 export const isStaggered = (player: Player) =>
   player.move?.type === PlayerMoveType.STAGGER && player.move?.turns > 0;

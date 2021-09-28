@@ -4,9 +4,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -15,9 +17,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -26,9 +30,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -37,9 +43,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -48,9 +56,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -59,9 +69,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -70,9 +82,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -81,9 +95,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -92,9 +108,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -103,9 +121,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 8,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -114,9 +134,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -125,9 +147,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 8,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -136,9 +160,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -147,9 +173,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -158,9 +186,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -169,9 +199,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -180,9 +212,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
+    "moves": Array [],
   },
 }
 `;
@@ -191,9 +225,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -202,9 +238,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -213,9 +251,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -224,9 +264,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -235,9 +277,11 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: PARRY  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -250,9 +294,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -265,9 +311,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -276,6 +324,7 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: STAGGER 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
@@ -283,6 +332,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -291,6 +341,7 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: STAGGER 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
@@ -298,6 +349,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -306,6 +358,7 @@ exports[`Battle system when player 1: ATTACK with 1 power and player 2: STAGGER 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 9,
@@ -313,6 +366,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -321,9 +375,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 8,
+    "moves": Array [],
   },
 }
 `;
@@ -332,9 +388,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -343,9 +401,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 8,
+    "moves": Array [],
   },
 }
 `;
@@ -354,9 +414,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 8,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 8,
+    "moves": Array [],
   },
 }
 `;
@@ -365,9 +427,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 8,
+    "moves": Array [],
   },
 }
 `;
@@ -376,9 +440,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -387,9 +453,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -402,9 +470,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -413,9 +483,11 @@ exports[`Battle system when player 1: ATTACK with 2 power and player 2: STAGGER 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 8,
+    "moves": Array [],
   },
 }
 `;
@@ -424,9 +496,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -435,9 +509,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -446,9 +522,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 9,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -457,9 +535,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -468,9 +548,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -479,9 +561,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -490,9 +574,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 8,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -501,9 +587,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -512,9 +600,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -523,9 +613,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -534,9 +626,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -545,9 +639,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: ATTACK w
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -556,9 +652,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -567,9 +665,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: DODGE  c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -582,9 +682,11 @@ Object {
       "turns": 2,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -597,9 +699,11 @@ Object {
       "turns": 6,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -608,9 +712,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: STAGGER 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -619,9 +725,11 @@ exports[`Battle system when player 1: ATTACK with 3 power and player 2: STAGGER 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 7,
+    "moves": Array [],
   },
 }
 `;
@@ -630,9 +738,11 @@ exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 1 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -641,9 +751,11 @@ exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 1 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -652,9 +764,11 @@ exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 1 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -663,9 +777,11 @@ exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 2 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -674,9 +790,11 @@ exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 3 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -685,9 +803,11 @@ exports[`Battle system when player 1: DODGE  and player 2: ATTACK with 3 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -696,9 +816,11 @@ exports[`Battle system when player 1: DODGE  and player 2: DODGE  calculates it 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -707,6 +829,7 @@ exports[`Battle system when player 1: DODGE  and player 2: PARRY  calculates it 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
@@ -714,6 +837,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -722,9 +846,11 @@ exports[`Battle system when player 1: DODGE  and player 2: STAGGER  calculates i
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -733,9 +859,11 @@ exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 1 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -744,6 +872,7 @@ exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 1 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
@@ -751,6 +880,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -759,6 +889,7 @@ exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 1 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
@@ -766,6 +897,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -774,6 +906,7 @@ exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 2 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
@@ -781,6 +914,7 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -789,6 +923,7 @@ exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 3 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
@@ -796,6 +931,7 @@ Object {
       "turns": 2,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -804,6 +940,7 @@ exports[`Battle system when player 1: PARRY  and player 2: ATTACK with 3 power c
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
@@ -811,6 +948,7 @@ Object {
       "turns": 6,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
 }
 `;
@@ -823,9 +961,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -834,9 +974,11 @@ exports[`Battle system when player 1: PARRY  and player 2: PARRY  calculates it 
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -845,9 +987,11 @@ exports[`Battle system when player 1: PARRY  and player 2: STAGGER  calculates i
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -860,9 +1004,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -875,9 +1021,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -890,9 +1038,11 @@ Object {
       "turns": 1,
       "type": "STAGGER",
     },
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -901,9 +1051,11 @@ exports[`Battle system when player 1: STAGGER  and player 2: ATTACK with 2 power
 Object {
   "p1": Object {
     "hp": 8,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -912,9 +1064,11 @@ exports[`Battle system when player 1: STAGGER  and player 2: ATTACK with 3 power
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -923,9 +1077,11 @@ exports[`Battle system when player 1: STAGGER  and player 2: ATTACK with 3 power
 Object {
   "p1": Object {
     "hp": 7,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -934,9 +1090,11 @@ exports[`Battle system when player 1: STAGGER  and player 2: DODGE  calculates i
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -945,9 +1103,11 @@ exports[`Battle system when player 1: STAGGER  and player 2: PARRY  calculates i
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
@@ -956,9 +1116,11 @@ exports[`Battle system when player 1: STAGGER  and player 2: STAGGER  calculates
 Object {
   "p1": Object {
     "hp": 10,
+    "moves": Array [],
   },
   "p2": Object {
     "hp": 10,
+    "moves": Array [],
   },
 }
 `;
