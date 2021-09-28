@@ -28,13 +28,13 @@ export const createAI = (): AI => ({
     {
       moves: [
         { type: PlayerMoveType.PARRY },
-        { type: PlayerMoveType.ATTACK, power: 3 },
+        { type: PlayerMoveType.ATTACK, power: 5 },
       ],
       activationConditions: [{ minHp: 0.5, maxHp: 1 }],
     },
     {
       moves: [
-        { type: PlayerMoveType.ATTACK, power: 3 },
+        { type: PlayerMoveType.ATTACK, power: 5 },
         { type: PlayerMoveType.PARRY },
       ],
       activationConditions: [{ minHp: 0, maxHp: 0.5 }],
@@ -42,7 +42,7 @@ export const createAI = (): AI => ({
     {
       moves: [
         { type: PlayerMoveType.BLOCK },
-        { type: PlayerMoveType.ATTACK, power: 3 },
+        { type: PlayerMoveType.ATTACK, power: 5 },
       ],
       activationConditions: [{ minHp: 0, maxHp: 0.7 }],
     },
